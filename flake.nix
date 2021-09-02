@@ -29,7 +29,7 @@
           };
         };
 
-        packages.stJD = pkgs.dwmJD;
+        packages.dwmJD = pkgs.dwmJD;
         defaultApp = apps.dwm;
         defaultPackage = pkgs.dwmJD;
 
