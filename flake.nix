@@ -32,6 +32,10 @@
         packages.stJD = pkgs.dwmJD;
         defaultApp = apps.dwm;
         defaultPackage = pkgs.dwmJD;
+
+        devShell = pkgs.mkShell {
+          buildInputs = with pkgs; [ xorg.libX11 xorg.libXft xorg.libXinerama gcc bear ];
+        };
       }
     );
 }
