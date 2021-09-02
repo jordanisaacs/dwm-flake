@@ -13,7 +13,7 @@
           inherit system;
           overlays = [
             (final: prev: {
-              stJD = prev.dwm.overrideAttrs (oldAttrs: rec {
+              dwmJD = prev.dwm.overrideAttrs (oldAttrs: rec {
                 version = "master";
                 src = ./.;
               });
